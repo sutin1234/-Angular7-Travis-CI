@@ -1,0 +1,17 @@
+<div class="drag-drop-container">
+    <div class="drag-drop-component">
+        <h1>Drag Drop Components</h1>
+        <app-food-breakfast cdkDropList #breakfastList="cdkDropList" [cdkDropListData]="breakfast" (cdkDropListDropped)="drop($event)">
+        </app-food-breakfast>
+    </div>
+    <div class=" drag-drop-data ">
+        <h1>Drag Drop DataList</h1>
+        <div cdkDropList [cdkDropListData]="listDataDragDrop " (cdkDropListDropped)="drop($event) " [cdkDropListConnectedTo]="[breakfastList] " class="drop-data-container ">
+            <div class="drop-items " *ngFor="let item of listDataDragDrop " cdkDrag [cdkDragData]="item ">
+                <img [src]="item?.url ">
+                <div class="header-text ">{{ item?.name }}</div>
+            </div>
+        </div>
+    </div>
+
+</div>
