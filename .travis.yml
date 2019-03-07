@@ -9,6 +9,8 @@ branches:
 before_script:
   - npm install -g @angular/cli
   - npm i angular-cli-ghpages
-  - npm i angular-cli-ghpages --save-dev
 script:
   - ng build --prod --base-href https://sutin1234.github.io/Angular7-Travis-CI
+  - ngh --message="auto deploy"
+  - ngh --branch=production
+  - ngh --dry-run
