@@ -11,4 +11,4 @@ before_script:
   - npm i -g angular-cli-ghpages
 script:
   - ng build --prod --base-href https://sutin1234.github.io/Angular7-Travis-CI
-  - ngh --no-silent
+  - ngh --repo=https://sutin1234@github.com/organisation/Angular7-Travis-CI.git --name="sutin1234" --email=tony.sutin1234@gmail.com
