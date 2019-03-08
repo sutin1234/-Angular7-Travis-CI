@@ -11,3 +11,10 @@ before_script:
   - npm i -g angular-cli-ghpages
 script:
   - ng build --prod --base-href https://sutin1234.github.io/Angular7-Travis-CI
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/Angular7-Travis-CI
+  on:
+    branch: master
