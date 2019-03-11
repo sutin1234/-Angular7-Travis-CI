@@ -1,0 +1,9 @@
+<div class="breakfast-container">
+    <h2>BreakFast Data</h2>
+    <div class="drop-data-container">
+        <div class="drop-items " *ngFor="let it of cdkDropListData">
+            <div><img [src]="it?.url "></div>
+            <div class="header-text ">{{ it?.name }}</div>
+        </div>
+    </div>
+</div>

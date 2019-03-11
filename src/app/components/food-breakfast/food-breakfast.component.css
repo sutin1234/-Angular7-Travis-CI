@@ -1,0 +1,27 @@
+.breakfast-container {
+    margin: 10px;
+}
+
+.drop-items {
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+}
+
+.drop-items:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.drop-items>div>img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.header-text {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
