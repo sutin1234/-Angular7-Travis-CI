@@ -17,4 +17,4 @@ deploy:
   github_token: $GITHUB_TOKEN
   local_dir: dist/Angular7-Travis-CI
   on:
-    branch: gh-pages
+    branch: master
